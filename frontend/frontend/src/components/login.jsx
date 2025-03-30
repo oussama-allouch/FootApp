@@ -31,9 +31,9 @@ const Login = () => {
 
         // Redirection selon le rôle
         if (response.data.user.role === "admin") {
-          navigate("/admin-dashboard");
+          navigate("/admin");
         } else {
-          navigate("/user-dashboard");
+          navigate("/dashboard");
         }
       } else {
         setError("Invalid login response. Please try again.");

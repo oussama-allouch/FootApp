@@ -21,17 +21,13 @@ const RouterComponent = () => {
         <Route path="/" element={<Home />} />
 
         {/* Routes protégées (utilisateur) */}
-        <Route element={<ProtectedRoute allowedRoles={['user', 'admin']} />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/matches/:id" element={<MatchDetails />} />
           <Route path="/payment/:matchId" element={<Payment />} />
           <Route path="/tickets/:billetId" element={<QRCode />} />
-        </Route>
 
         {/* Routes protégées (admin uniquement) */}
-        <Route element={<ProtectedRoute allowedRoles={['admin']} />}>
           <Route path="/admin" element={<AdminDashboard />} />
-        </Route>
 
         {/* Gestion des 404 */}
         <Route path="*" element={<NotFound />} />
