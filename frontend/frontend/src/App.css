@@ -1,12 +1,11 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/preflight";
-@tailwind utilities;
-@import "tailwindcss";
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;  /* Prend toute la hauteur de l'écran */
+  width: 100%;       /* Prend toute la largeur */
+  
 }
 
 .logo {

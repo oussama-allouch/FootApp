@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css"; // Using Bootstrap for basic styling
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -33,7 +32,7 @@ const Login = () => {
         if (response.data.user.role === "admin") {
           navigate("/admin");
         } else {
-          navigate("/dashboard");
+          navigate("/");
         }
       } else {
         setError("Invalid login response. Please try again.");

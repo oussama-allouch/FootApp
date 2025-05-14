@@ -21,11 +21,11 @@ class FootMatch extends Model
 
     public function stade()
     {
-        return $this->belongsTo(Stade::class);
+        return $this->belongsTo(Stade::class,'stade_id');
     }
 
     public function billets()
     {
-        return $this->hasMany(Billet::class);
+        return $this->hasMany(Billet::class,'match_id');
     }
 }

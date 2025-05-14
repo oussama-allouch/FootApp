@@ -22,7 +22,7 @@ class Billet extends Model
 
     public function match()
     {
-        return $this->belongsTo(FootMatch::class);
+        return $this->belongsTo(FootMatch::class,'match_id');
     }
 
     public function user()

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios"; // Import axios for making API requests
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 
 const Register = () => {
   const [name, setName] = useState("");

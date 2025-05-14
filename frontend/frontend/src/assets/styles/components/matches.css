@@ -1,0 +1,79 @@
+.matches-section {
+    flex: 1;  
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.75rem;
+    color: var(--dark);
+  }
+  
+  .search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    min-width: 250px;
+  }
+  
+  .matches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .match-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .match-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .match-date {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+  }
+  
+  .team {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .home-team { color: var(--primary); }
+  .away-team { color: var(--danger); }
+  .vs {
+    font-size: 0.9rem;
+    background: #f1f1f1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+  }
+  
+  .match-stadium {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }

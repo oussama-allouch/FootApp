@@ -17,6 +17,7 @@ Route::post('/logout', [UsersController::class, 'logout']);
 
 Route::get('/matches', [MatchController::class, 'getAvailableMatches']);
 Route::get('/matches/{id}', [MatchController::class, 'getMatchDetails']);
+Route::get('/popular', [MatchController::class, 'getPopularMatches']);
 
 Route::post('/billets/acheter', [BilletController::class, 'acheterBillet']);
 Route::get('/billets/user/{id}', [BilletController::class, 'mesBillets']);

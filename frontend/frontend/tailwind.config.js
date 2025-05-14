@@ -1,16 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Ajoute tous les fichiers React
+    "./src/**/*.{html,js,jsx,ts,tsx}",  // Assure-toi que ce chemin couvre tous tes fichiers JSX et TSX
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: "#3b82f6", // Exemple de couleur personnalisée
-      },
-    },
+    extend: {},
   },
   plugins: [],
-  darkMode: "class", // Active le dark mode via classe CSS
 }
